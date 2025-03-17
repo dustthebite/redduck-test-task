@@ -8,5 +8,5 @@ const curry = (f) => {
     }
 }
 
-console.log(curry(add)(1)(2)(3)(4)(5) == add(1,2,3,4,5)) 
-console.log(curry(multiply)(1)(2)(3) == multiply(1,2,3)) 
+curry(add)(1)(2)(3)(4)(5) == add(1,2,3,4,5)
+curry(multiply)(1)(2)(3) == multiply(1,2,3)
