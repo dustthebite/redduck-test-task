@@ -15,7 +15,7 @@ ctx.prototype.__handleStyles = function(source, isDefaultStyles = false, isGetti
     for (i=0; i<keys.length; i++) {
         key = keys[i]; 
         if(isGettingState) {styleState[key] = this[key];}
-        else if (isDefaultStyles && source[key].canvas !== undefined) 
+        else if (isDefaultStyles) 
            {this[key] = source[key].canvas;}
             else 
                 {this[key] = source[key];}
